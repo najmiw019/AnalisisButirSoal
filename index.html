@@ -143,7 +143,7 @@ const items=kunci.map((k,i)=>{
   const BA=upper.filter(d=>d.correct[i]===1).length;
   const BB=lower.filter(d=>d.correct[i]===1).length;
   const PA=BA/10, PB=BB/10, D=PA-PB;
-  const dpCat=D<0?'Sangat Jelek':D<0.20?'Jelek':D<0.40?'Cukup':D<0.70?'Baik':'Baik Sekali';
+  const dpCat=D<0?'Sangat Jelek':D<0.19?'Jelek':D<0.39?'Cukup':D<0.69?'Baik':'Baik Sekali';
   const Mp=cor.length>0?cor.reduce((a,d)=>a+d.total,0)/cor.length:0;
   const sqrtpq=P>0&&q>0?Math.sqrt(P/q):0;
   const rpbis=St>0?((Mp-Mt)/St)*sqrtpq:0;
